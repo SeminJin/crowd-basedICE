@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crowd-based ICE system</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" type="image/png" href="./static/favi-17.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Blending Designer Insights with Predicted Crowd-based Color Compatibility in Interior Color Design</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://seminjin.com" target="_blank">Semin Jin</a><sup>a, b</sup>,</span>
+            <span class="author-block">
+              <a href="https://designinformatics.hanyang.ac.kr/People_Kyung-Hoon-Hyun" target="_blank">Kyung Hoon Hyun</a><sup>a, b, *</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>a</sup> Department of Interior Architecture Design, Hanyang University</span>
+            <br>
+            <span class="author-block"><sup>b</sup> Human-Centered AI Design Institute, Hanyang University</span>
+            <br>
+            <span class="author-block"><sup>*</sup> Corresponding author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark" disabled style="opacity: 0.5; pointer-events: none;">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming Soon)</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark" disabled style="opacity: 0.5; pointer-events: none;">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video (Coming Soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark" disabled style="opacity: 0.5; pointer-events: none;">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="width: 100%; height: 400px; overflow: hidden;">
+        <video id="teaser" autoplay muted loop playsinline style="object-fit: cover; margin-top: -10%; margin-bottom: -20%;">
+          <source src="./static/videos/demo01.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="width: 100%; height: 400px; overflow: hidden;">
+        <video id="teaser" autoplay muted loop playsinline style="object-fit: cover; margin-top: -5%; margin-bottom: -30%;">
+          <source src="./static/videos/demo03.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Harmonious color combinations define the quality and atmosphere of interior spaces. 
+            Designers refine schemes through iteration to meet client requirements,often relying on existing color design tools. 
+            However, these tools have two key limitations: they do not account for colors applied to specific objects, nor do they reflect aesthetic preferences. 
+            To address this, we developed a vision-language augmented Image Color Aesthetic Assessment model that predicts color compatibility for objects in interior design images. 
+            Moreover, this model powers the crowd-based Image Color Combination Evaluation system, enabling designers to prototype, evaluate, and generate new color combinations in real-time. 
+            A user study with 16 designers revealed that 81% found the predicted color compatibility scores aligned with aesthetic principles with which they were familiar, aiding them in integrating these scores into their designs. 
+            The proposed system helps designers explore harmonious color combinations, avoid personal bias, and foster trust by leveraging predicted crowd-based color compatibility.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src=""
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{ TBD }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer" style="padding: 1.5rem;">
+  <div class="container">
+    <div class="content has-text-centered" style="font-size: 0.85rem;">
+      <p>
+        Website template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
